@@ -6,7 +6,7 @@ Is your computer only capable of running small, quantized LLMs? Would you love t
 
 ## Level 1: The Basics
 
-**The basic idea:** We deploy a function to Modal, then we call that function locally inside a Jupyter notebook.
+**The basic idea:** We deploy a function to Modal, an easy-to-use cloud platform, then we call that function locally from a Jupyter notebook.
 
 **The unbelievable part:** The function will run on a super powerful GPU in the cloud. Plus, we get to use free processing credits ($30 monthly).
 
@@ -16,7 +16,7 @@ Yeah, I know Mistral is good, but what if I want to test different models?
 
 ## Level 3: vLLM
 
-Coming [soon](https://github.com/vllm-project/vllm/pull/4109)
+Coming [soon](https://github.com/vllm-project/vllm/pull/4109).
 
 ## Level 4: FastAPI
 
