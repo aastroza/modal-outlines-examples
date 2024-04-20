@@ -1,5 +1,5 @@
 import os
-from modal import App, Secret, gpu, enter, build, method, Image
+from modal import App, Secret, gpu, method, Image
 
 app = App(name="outlines-app")
 
@@ -35,7 +35,5 @@ class Model:
             generator = outlines.generate.json(self.model, schema.strip())
 
         result = generator(prompt)
-
-        return result
 
         return result
