@@ -8,6 +8,7 @@ outlines_image = Image.debian_slim(python_version="3.11").pip_install(
     "transformers==4.38.2",
     "datasets==2.18.0",
     "accelerate==0.27.2",
+    "einops==0.7.0"
 )
 
 @app.cls(image=outlines_image, secrets=[Secret.from_dotenv()], gpu=gpu.A100(memory=80), timeout=300)
@@ -20,6 +21,7 @@ class Model:
             device="cuda",
             model_kwargs={
                 "token": os.environ["HF_TOKEN"],
+                "trust_remote_code": True,
             },
         )
 
